@@ -16,23 +16,25 @@ int main()
     eil1 = "Sveikas, ";
     eil2 = "Sveika, ";
     cout << "Iveskite savo varda: "; cin >> vardas;
+    cout << "Iveskite norimu eiliuciu kieki: (1 - 10) "; cin >> n;
     if(vardas.back() == 's') eil = eil1;
     else eil = eil2;
     eil += vardas;
     eil += sauktukas;
-    eil = "* " + eil + " *"; 
-    ilgis = eil.length();
+    ilgis = eil.length() + 4;
     while(ilgis > 0)
     {
         zvaigzdutes += "*";
         ilgis--;
     }
-    ilgis = eil.length();
+    ilgis = eil.length()+ 4;
     ilgis -= 1;
     cout << zvaigzdutes << endl;
-    cout << "*" << setw(ilgis) << "*" << endl;
-    cout << eil << endl;
-    cout << "*" << setw(ilgis) << "*" << endl;
+    for(int i = 0; i < n; i++)
+        cout << "*" << setw(ilgis) << "*" << endl;
+    cout << "* "  << eil << " *" << endl;
+    for(int i = 0; i < n; i++)
+        cout << "*" << setw(ilgis) << "*" << endl;
     cout << zvaigzdutes << endl;
     return 0;
 }
