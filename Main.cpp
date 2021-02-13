@@ -11,10 +11,13 @@ using std::setw;
 
 int main()
 {
-    string eil, vardas, sauktukas = "!", fileris, zvaigzdutes;
+    string eil1, eil2, eil, vardas, sauktukas = "!", fileris, zvaigzdutes;
     int n, ilgis;
-    eil = "Sveikas, ";
+    eil1 = "Sveikas, ";
+    eil2 = "Sveika, ";
     cout << "Iveskite savo varda: "; cin >> vardas;
+    if(vardas.back() == 's') eil = eil1;
+    else eil = eil2;
     eil += vardas;
     eil += sauktukas;
     eil = "* " + eil + " *"; 
