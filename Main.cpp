@@ -13,7 +13,7 @@ int main()
 {
     string eil, vardas, sauktukas = "!", fileris, zvaigzdutes;
     int n, ilgis;
-    eil = "Sveiki, ";
+    eil = "Sveikas, ";
     cout << "Iveskite savo varda: "; cin >> vardas;
     eil += vardas;
     eil += sauktukas;
