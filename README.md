@@ -2,6 +2,6 @@
 #1 
 Padarytas paprastas pasisveikinimas 
 #2
-Pasisveikinimas pagal lyti
+Pasisveikinimas pagal lytį
 #3 
-Eiluciu pasirinkimas
+Eilučių pasirinkimas
